@@ -1,0 +1,125 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11pt, letterpaper]{awesome-cv}
+\usepackage{graphicx}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{cv/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\name{}{Harry Redgrave Smith}
+\address{2912 N Pine Grove Ave - Unit \#1 - Chicago - IL - 60657}
+\mobile{(312) 533 5900}
+
+\email{harry@redgraveaero.com}
+\linkedin{smithharry}
+
+
+\position{Rotary Aerodynamicist{\enskip\cdotp\enskip}Experimentalist{\enskip\cdotp\enskip}Science Communicator} % Your expertise/fields
+%\quote{``Harry has excellent technical, social and communication skills, and an exemplary character.''\newline\raggedleft Dr Eric Gillies, CEng, MRAeS} % A quote or statement
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Letter Data (Cover Letter)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\letterdate{\today}
+%\lettertitle{\vspace{-1cm}}
+\letteropening{Dear recruiter,}
+%\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Resume and Curriculum Vit\ae}
+\letterclosing{Yours sincerely,\vspace{.5cm}\\
+{\includegraphics[scale=1.2]{sig.pdf}}} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+  {\today}
+  {Harry R Smith~~~·~~~Cover Letter}
+  {}
+
+\begin{document}
+%%% Make a header for CV using personal data
+\makecvheader
+
+%%% Make a title for Cover Letter using letter data
+\makelettertitle
+
+%%% Write content for your cover letter
+\begin{cvletter}
+
+%Dear JT4,
+Please find attached my resume and CV for consideration for the Aerospace Engineer role.
+
+As you will see from my career history, I have a wealth of pertinent experience in each of the responsibilities and duties for this role. I was a senior wind tunnel aerospace engineer at the Aircraft Research Association, where I designed, conducted, and analyzed experiments. During this time I was instrumental in large design studies to explore motor upgrades and pneumatic systems within the 30MW facility; I have acted at roles from technical specialist through to technical manager on different projects. 
+
+At present I am employed as a professor at Illinois Tech, and my wife is a USAF Captain. She is moving to a role at Nellis AFB in May, hence our relocation to Las Vegas. Concurrently with my teaching, I have been performing research in propeller aerodynamics and machine learning; I have several papers submitted and expect publication shortly. I also own my own consulting company and have taken charge of the aircraft design process for a large UAV firm.
+
+I have enjoyed developing the next generation of aerospace engineers during my time at Illinois Tech, but I miss being involved in \textsl{real} engineering. It will be a pleasure to become part of your company and the exciting work performed.
+
+I would appreciate the chance to expand upon my career history, and to learn more about this role if fortunate enough to gain an interview. I am originally from the UK and the resume/CV distinction is new unfamiliar to me. I have attached a short single-page resume and a longer three-page document that goes into further detail about my achievements.
+
+Thank you for your time and consideration.
+
+
+
+%\cvparagraph{About Me}
+%
+%I have worked in aircraft aerodynamics since my graduation in 2010, through my PhD, and thereafter as a professional researcher for four years at Europe's most productive transonic wind tunnel. In 2018 I moved to Chicago so my wife could be closer to home (she is a USAF Officer, and was stationed in the UK), so I took a position as a lecturer at the Illinois Institute of Technology.
+%
+%
+%\cvparagraph{Why Wilson?}
+%
+%I am fit and healthy, and would love to work for a company in the sports industry - I play squash (adequately) when I get a chance, though I have yet to find a partner for the sport in the US! The role looks like it is an excellent fit for my skill set, and I am eager to find a set of new problems to sink my teeth into. 
+%
+%\cvparagraph{Why Me?}
+%Through my time I have worked with a fusion of experimental and numerical methods - utilising RANS CFD for Turbomachinery investigation, developing my own vortex-lattice models for propellers at incidence, and developing novel methods for capturing flow data for transonic experiments. I feel there has been a blurring of the demarcation between experimental and numerical aerodynamics, and I consider myself fortunate to have strong abilities in both fields. I have a demonstrated passion for my discipline, and I am able to adapt easily to new problems and circumstances.
+
+
+
+\end{cvletter}
+
+%%% Make a closing for Cover Letter using letter data
+\makeletterclosing
+
+\end{document}

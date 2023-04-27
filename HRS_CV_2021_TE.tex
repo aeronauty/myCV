@@ -1,0 +1,81 @@
+\documentclass[12pt,letterpaper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
+
+
+\geometry{left=1.5cm, top=1cm, right=1.5cm, bottom=1.3cm, footskip=.5cm} % Configure page margins with geometry
+%\usepackage{pdfpages}
+\fontdir[fonts/] % Specify the location of the included fonts
+
+% Color for highlights
+\colorlet{awesome}{awesome-red} % Default colors include: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
+%\definecolor{awesome}{HTML}{CA63A8} % Uncomment if you would like to specify your own color
+
+\PassOptionsToPackage{usenames,dvipsnames}{xcolor}
+
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%----------------------------------------------------------------------------------------
+
+\name{}{Harry Redgrave Smith}
+\address{2912 N Pine Grove Ave - Unit \#1 - Chicago - IL - 60657}
+\mobile{+1 (312) 533 5900}
+
+\email{harry@redgraveaero.com}
+\linkedin{smithharry}
+
+
+\position{Rotary Aerodynamicist{\enskip\cdotp\enskip}Test Engineer{\enskip\cdotp\enskip}Science Communicator} % Your expertise/fields
+%\quote{``Harry has excellent technical, social and communication skills, and an exemplary character.''\newline\raggedleft Dr Eric Gillies, CEng, MRAeS} % A quote or statement
+
+\makecvfooter{\today}{Harry R. Smith~~~·~~~Curriculum Vit\ae}{\thepage} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
+
+%----------------------------------------------------------------------------------------
+
+\renewcommand*{\cventry}[5]{%
+  \vspace{-2.0mm}
+  \setlength\tabcolsep{2pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.0cm} R{4.0cm}}
+    \ifempty{#2#3}
+      {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+      {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\[-2pt] % <--
+      \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+    \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
+  \end{tabular*}%
+}
+
+\begin{document}
+
+%\includepdf{cover_letter} 
+
+\makecvheader % Print the header
+\pagenumbering{arabic}
+%----------------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%----------------------------------------------------------------------------------------
+\vspace{-.4cm}
+\input{cv-sections/objective2.tex}
+\input{cv-sections/skills.tex}
+
+\input{cv-sections/industrialexperience.tex}
+%\newpage
+\input{cv-sections/industrialexperience2.tex}
+
+\newpage
+\input{cv-sections/education.tex}
+\vspace{.5cm}
+%\clearpage
+%\input{cv-sections/teachingexperience.tex}
+%\newpage
+\input{cv-sections/presentations.tex}
+
+%\input{cv-sections/publications.tex}
+
+%\input{cv-sections/interests.tex}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
